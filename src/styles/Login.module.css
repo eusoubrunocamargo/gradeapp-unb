@@ -9,7 +9,7 @@
     grid-gap: 1rem;
     grid-template-rows: repeat(12,1fr);
 }
-
+/* opa */
 .logoTexto {
     font-size: 5rem;
     font-weight: bold;
