@@ -43,6 +43,10 @@ export default function Login() {
           <div className={styles.logoMais}>
             +
           </div> */}
+          {/* GRADE
+          <div className={styles.logoMais}>
+            +
+          </div> */}
         </div>
 
         <Image priority src='/login_illustration.png' width={500} height={500} alt='illustration' style={{
@@ -82,7 +86,7 @@ export default function Login() {
           <Image src='/google_icon.png' priority width={20} height={20} alt='google'/>
           <span>Entre com o Google</span>
         </button>
-
+        
       </main>
     </>
   )
