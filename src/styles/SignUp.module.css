@@ -1,126 +1,94 @@
 .mainContainer {
-    background-color: #EBE5DF;
+    background-color: white;
     width: 100vw;
-    padding: 0 10rem;
     max-width: 144rem;
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .leftContainer{
-    /* border: solid green; */
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    flex-grow: 1;
-    flex-basis: 72rem;
-}
-
-.containerLeftImage{
-    display: flex;    
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.rightContainer{
-    /* border: solid red; */
-    display: flex;
-    flex-direction: column;
+    background-color: white;
+    flex: 1;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    flex-grow: 1;
-    flex-basis: 72rem;
+}  
+
+.rightContainer{
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+    width: 100vw;
+    flex:1;
+    background-color: #b50909;
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 5px;
+    align-items: center;
 }
 
-.logoTexto {
+.logogradeplus{
+    fill: #b50909;
+    width: 650px;
+    height: 470px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+.logologin{
+    width: 200px;
+    fill: white;
+    height: 200px;
+}
+
+
+.h1 {
     font-size: 5rem;
-    color: #333333;
-    padding: 4rem;
-}
-
-.logoMais {
-    font-size: 10rem;
-    font-weight: bold;
-    position: absolute;
-    color: #9747FF;
-    top: 0rem;
-    left: 13rem;
-}
-
-.textbox {
-    width: 100%;
-}
-
-.textbox h1 {
-    font-size: 10rem;
-    color: #9747FF;
-    line-height: 12rem;
-    font-weight: normal;
-}
-
-.textbox p {
-    font-size: 3rem;
-    color: #707070;
-    padding: 0 1rem;
+    color: white;
+    line-height: 10rem;
+    margin-bottom: 5px;
 }
 
 .formLogin {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 1rem;
+    /* border: solid; */
+    grid-column: 7/12;
+    grid-row: 5;
+    display: grid;
+    gap: 1rem;
+    /* padding: 2rem 0rem; */
 }
 
 .formLogin input {
-    background-color: #FFF;
-    box-shadow: 1px 1px 0px 1px #333;
-    text-align: left;
-    box-sizing: border-box;
-    padding: 0 0 0 8rem;
-}
-
-.wideInput{
     width: 47rem;
     height: 6rem;
-}
-.shortInput{
-    width: 23rem;
-    height: 6rem;
-}
-
-.setPassContainer{
-    display: flex;
-    gap: 1rem;
+    background-color: #FFF;
+    box-shadow: 1px 1px 0px 1px #333;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 0 5rem;
 }
 
 .formLogin input:hover {
     box-shadow: 2px 2px 0px 1px #333;
-    transition: box-shadow 0.5s ease;
 }
 
 .btnSubmitLogin {
-    background-color: #9747FF;
+    background-color: #b50909;
     color: #F0F0F0;
     font-size: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 47rem;
+    width: 46.5rem;
     height: 6rem;
-    box-shadow: 1px 1px 0px 1px #333;
+    border-color: white;
+    border: outset ;
 }
 
-/* .btnSubmitLogin:focus, */
+.btnSubmitLogin:focus,
 .btnSubmitLogin:hover {
-    background-color: #BA85FF;
+    background-color: #b50909;
     box-shadow: 2px 2px 0px 1px #333;
-    transition: box-shadow 0.5s ease;
 }
 
 .inputWrapper {
@@ -130,8 +98,8 @@
 
 .inputWrapper label {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom:0;
+    right: 0;
     padding: 1.5rem;
     font-size: 2rem;
     color: #333;
@@ -140,55 +108,13 @@
     transition: .5s;
 }
 
-.inputWrapper input:focus ~ label ,
-.inputWrapper input:valid ~ label ,
-.inputWrapper input:not(:placeholder-shown) ~ label{
+.inputWrapper input:focus ~ label, 
+.inputWrapper input:valid ~ label {
   top: 0;
-  left: 0;
+  right: 0;
   color: #333;
   font-size: 1.4rem;
-  padding: 1rem;
-}
-
-.invalidInput{
-    border: solid #ff0000 1px;
-}
-
-.validInput{
-    border: solid #04AA6D 1px;
-}
-
-.errorMessage{
-    display: none;
-    color: #FF9999;
-    font-weight: lighter;
-    /* display: block; */
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 1rem;
-}
-
-.emptyMessage{
-    display: none;
-    color: #FF9999;
-    font-weight: lighter;
-    /* display: block; */
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 1rem;
-}
-
-.usedMessage{
-    display: none;
-    color: #FF9999;
-    font-weight: lighter;
-    /* display: block; */
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 1rem;
+  padding: 0.5rem;
 }
 
 .goSignUp{
@@ -197,11 +123,14 @@
     width: 47rem;
     height: 4rem;
     grid-row: 6;
-    color: #333;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
+}
+.forgetPassword{
+    color: black;
 }
 .btnGoogle{
     background-color: #FFF;
@@ -220,43 +149,4 @@
 }
 .btnGoogle:hover{
     box-shadow: 2px 2px 0px 1px #333;
-}
-
-.setCheckPassWrapper{
-    display: flex;
-    gap: 1rem;
-}
-
-.passModal{
-    width: 15rem;
-    height: 20rem;
-    background-color: #333333;
-    position: absolute;
-    top: 0;
-    left: -16rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-    text-align: center;
-    color: #707070;
-}
-
-.passModal span:first-child{
-    color: #F0F0F0;
-}
-
-.greenPass{
-    color: #04AA6D;
-}
-
-.containerEmailSent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    font-size: 2rem;
-    color: #333;
 }
